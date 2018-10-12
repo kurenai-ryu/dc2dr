@@ -32,6 +32,10 @@ Takes a docker-compose file, gives back a list of docker run commands.
 
 The supported docker-compose keys are:
 
+  - `build`
+  - `name`
+  - `restart`
+  - `volumes`
   - `depends_on`
   - `links`
   - `ports`
@@ -46,7 +50,7 @@ Usage
 From this dir you can run:
 
 ```
-python ./dc2dr/cli.py tests/example-compose.yml
+python -m dc2dr.cli tests/example-compose.yml
 ```
 
 Or from in a python script:

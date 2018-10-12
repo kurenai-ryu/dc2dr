@@ -9,9 +9,11 @@ def parse_yml(path):
     f = open(path)
     y = yaml.safe_load(f)
 
-    run_commands = parser.parse_compose_file(y)
+    print ("")
+    run_commands = parser.parse_compose_file(path, y)
     for c in run_commands:
         print(c)
+        print ("")
 
 @click.command()
 @click.argument('f', type=click.Path(exists=True))

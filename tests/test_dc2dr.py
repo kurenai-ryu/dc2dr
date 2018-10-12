@@ -17,7 +17,7 @@ import yaml
 from dc2dr import cli
 from dc2dr import parser
 
-FILE_PATH = 'tests/example-compose.yml'
+FILE_PATH = 'tests/docker-compose.yml'
 
 class TestDc2dr(object):
 
@@ -59,4 +59,3 @@ class TestDc2dr(object):
     @classmethod
     def teardown_class(cls):
         pass
-
